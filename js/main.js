@@ -57,4 +57,26 @@ $.each( lang, function( language, pourcent) {
   multiply++;
 
 });
+$('.owl-carousel').owlCarousel({
+  loop:true, //loop back to start, if set to false with center true, first slide will start in center.
+  margin:10,
+  nav:true,
+  autoplay:true,
+  center:true, //focused slide will stay center
+
+  //autoWidth:true, //for alternate image widths
+  //lazyLoad:true,  //only load images when needed
+
+  responsive:{
+      0:{ //from 0 px
+          items:1 //how many items per device width
+      },
+      600:{ //from 600
+          items:2
+      },
+      1000:{
+          items:3
+      }
+  }
+})
 

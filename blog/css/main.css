@@ -205,6 +205,13 @@ body {
     margin: 0;
     margin-top: 15px;
 }
+.tech-logo{
+    height: 100px;
+
+    & img{
+        height: inherit;
+    }
+}
 
 
 /* ==========================

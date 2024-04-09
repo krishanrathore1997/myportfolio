@@ -54,6 +54,9 @@ Table of contents
   .about-info{
     margin: 20px 0px;
   }
+  .text-gold{
+    color: #e0a80d;
+  }
   .title{
     color: #e0a80d;
     font-size: 30px;
@@ -810,6 +813,31 @@ body {
         height: calc(100vh - 80px);
         margin-top: 80px;
      }
+     section{
+        padding: 50px 0px;
+     }
+     .about-me .btn-1 {
+        background: #e0a80d;
+        border-radius: 35px;
+        padding: 10px;
+        font-size: 14px;
+        color: #ffffff;
+        font-weight: 500;
+        /* margin-right: 10px; */
+        text-decoration: none;
+    }
+    .about-me .btn-2 {
+    border: 2px solid #e0a80d;
+    border-radius: 35px;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 500;
+    text-decoration: none;
+}
+a {
+    text-decoration: none;
+}
 
     .slider .left-content {
         padding: 0;
@@ -817,7 +845,7 @@ body {
     }
 
     .animated-headlines .cd-headline span {
-        font-size: 30px;
+        font-size: 20px !important;
     }
 
     /* About Me */
