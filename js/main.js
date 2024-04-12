@@ -6,6 +6,8 @@ $(function () {
 
         // filter items on button click
         $('.filter-button-group').on('click', 'button', function () {
+            $('.filter-button-group').find('button').removeClass('active');
+            $(this).addClass('active');
             var filterValue = $(this).attr('data-filter');
             $grid.isotope({filter: filterValue});
             
@@ -57,7 +59,7 @@ $.each( lang, function( language, pourcent) {
   multiply++;
 
 });
-$('.owl-carousel').owlCarousel({
+$('.tech_logo').owlCarousel({
   loop:true, //loop back to start, if set to false with center true, first slide will start in center.
   margin:10,
   nav:true,
@@ -69,14 +71,18 @@ $('.owl-carousel').owlCarousel({
 
   responsive:{
       0:{ //from 0 px
-          items:1 //how many items per device width
+          items:2 //how many items per device width
       },
       600:{ //from 600
-          items:2
+          items:3
       },
       1000:{
-          items:3
+          items:5
       }
   }
 })
+
+function experience(element) {
+    $(element).closest(".ex-description").toggleClass('d-none');
+}
 

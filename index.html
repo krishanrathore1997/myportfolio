@@ -43,7 +43,13 @@
 
 <!-- Default Theme -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/assets/owl.theme.default.min.css">
-    </head>
+    <style>
+        .tech-logo img{
+            height: 100px !important;
+            width: 100px !important;
+        }
+    </style>
+</head>
 
     <body>
         <!-- ===== Start Navbar ===== -->
@@ -69,32 +75,15 @@
                             <a class="nav-link" href="#about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#services">Skill</a>
+                            <a class="nav-link" href="#skill">Skill</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#portfolio">Experience</a>
+                            <a class="nav-link" href="#experience">Experience</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#testimonials">Educations</a>
+                            <a class="nav-link" href="#education">Educations</a>
                         </li>
                         <!-- Drop Down-->
-                        <li class="nav-item dropdown">
-                            <a
-                                class="nav-link "
-                                href="#"
-                                id="navbarDropdown"
-                                role="button"
-                                data-toggle="dropdown"
-                                aria-haspopup="true"
-                                aria-expanded="false">
-                                Blog
-                                <span class="fa fa-angle-down"></span>
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class='dropdown-item' href='blog/index.html'>Blog List</a>
-                                <a class='dropdown-item' href='single-post/index.html'>Single Post</a>
-                            </div>
-                        </li>
                         <!-- Drop Down-->
                         <li class="nav-item">
                             <a class="nav-link" href="#contact">Contact</a>
@@ -188,7 +177,7 @@ effectively to deliver high-quality, scalable solutions.
         </section>
         <!-- ===== End About Me ===== -->
         <!-- skills start -->
-        <section class="skills">
+        <section class="skills" id="skill">
             <h2 class="text-center title">Skills</h2>
             <div class="container">
                 <div class="row skills-bar-container">
@@ -243,22 +232,23 @@ effectively to deliver high-quality, scalable solutions.
                             <span class="progressbar progresssql" id="progress-sql"></span>
                           </div>
                     </div>
-                    <!-- <div class="col-12">
-                        <div class="owl-carousel">
-                            <div class="item tech-logo"><img src="/img/logo/icons8-html-logo.svg" alt=""></div>
-                            <div class="item tech-logo"><img src="/img/logo/icons8-css-logo.svg" alt=""></div>
-                            <div class="item tech-logo"><img src="/img/logo/icons8-javascript.svg" alt=""></div>
-                            <div class="item tech-logo"><img src="/img/logo/Bootstrap_logo.svg" alt=""></div>
-                            <div class="item tech-logo"><img src="/img/logo/icons8-php-logo.svg" alt=""></div>
-                            <div class="item tech-logo"><img src="/img/logo/laravel-1-logo-svgrepo-com.svg" alt=""></div>
-                            <div class="item tech-logo"><img src="/img/logo/mysql-logo-svgrepo-com.svg" alt=""></div>
-                           
-                        
-                          </div>
-                          
-                    </div> -->
                 </div>
             </div>
+        </section>
+        <section class="">
+            <div class="container">
+                <div class="owl-carousel tech_logo">
+                <div class="item tech-logo"><img src="/img/logo/icons8-html-logo.svg" alt=""></div>
+                <div class="item tech-logo"><img src="/img/logo/icons8-css-logo.svg" alt=""></div>
+                <div class="item tech-logo"><img src="/img/logo/Bootstrap_logo.svg" alt=""></div>
+                <div class="item tech-logo"><img src="/img/logo/icons8-javascript.svg" alt=""></div>
+                <div class="item tech-logo"><img src="/img/logo/jquery.svg" alt=""></div>    
+                <div class="item tech-logo"><img src="/img/logo/icons8-php-logo.svg" alt=""></div>
+                <div class="item tech-logo"><img src="/img/logo/laravel-1-logo-svgrepo-com.svg" alt=""></div>
+                <div class="item tech-logo"><img src="/img/logo/mysql-logo-svgrepo-com.svg" alt=""></div>    
+                <div class="item tech-logo"><img src="/img/logo/git-icon.svg" alt=""></div>    
+            </div>
+        </div> 
         </section>
         <!-- skill end -->
 
@@ -343,7 +333,7 @@ effectively to deliver high-quality, scalable solutions.
                     <!-- Box-2 -->
                     <div class="col-lg-3 col-sm-6">
                         <div class="items">
-                            <span class="fa fa-heart-o"></span>
+                            <span class="fa-solid fa-file-powerpoint"></span>
                             <h3>
                                 <span class="counter">50</span> +</h3>
                             <div class="line mx-auto"></div>
@@ -363,7 +353,7 @@ effectively to deliver high-quality, scalable solutions.
                     <!-- Box-4 -->
                     <div class="col-lg-3 col-sm-6">
                         <div class="items">
-                            <span class="fa fa-user-o"></span>
+                            <span class="fa-solid fa-code"></span>
                             <h3>
                                 <span class="counter">10000 </span> +</h3>
                             <div class="line mx-auto"></div>
@@ -480,6 +470,46 @@ effectively to deliver high-quality, scalable solutions.
         </section>
         <!-- ===== End Portfolio ===== -->
 
+        <!-- <section>
+            <div class="container">
+                <h2 class="text-center title py-3">Experience</h2>
+                <div class="row position-relative justify-content-center">
+                    <div class="col-md-6">
+                        <div class="">
+                            <div class="d-flex justify-content-between" onclick="experience('this')">
+                                <h2 class="text-white"><i class="fa-solid fa-briefcase text-gold me-2"></i> Full Stack Devloper</h2>
+                                <h2 class="text-white"><i class="fa-regular fa-clock text-gold me-2"></i> May 2023 - Present</h2>
+                            </div>
+                            <div class="ex-description d-none text-white">
+                                <ul>
+                                    <li>
+                                        Website Design & Development 
+                                    </li>
+                                    <li>    
+                                        Software Design & Development 
+                                    </li>
+                                    <li>    
+                                         PHP Concept
+                                    </li>
+                                    <li>    
+                                        Laravel Base Admin Panel
+                                    </li>
+                                    <li>    
+                                        Rest API
+                                    </li>
+                                    <li>    
+                                        Working With MySql Database 
+                                    </li>
+                                    <li>    
+                                       Maintain Backup Uisng Git VCS
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
 
         <!-- ===== Start Testimonials ===== -->
         <section class="testimonials" id="testimonials">
@@ -552,58 +582,7 @@ effectively to deliver high-quality, scalable solutions.
         <!-- ===== End Testimonials ===== -->
 
 
-        <!-- ===== Start Blog ===== -->
-        <section class="blog" id="blog">
-            <div class="container">
-                <h2 class="text-center">Our Blog</h2>
-                <div class="row">
-                    <!-- Post-1 -->
-                    <div class="co-md-6 col-lg-4">
-                        <div class="box">
-                            <div class="image">
-                                    <img src="img/blog/1.png" alt="">
-                                    <a href="#" class="cate">Web</a>
-                            </div>
-                            <div class="text">
-                                    <h3><a href="#">Master These Awesome</a></h3>
-                                    <h4>By Dorian Gray, Jun 27, 2018</h4>
-                                    <p>Lorem Ipsum has been standard. Lorem Ipsum is simply text of the printing and typesetting industry. Lorem Ipsum has been</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Post-2 -->
-                    <div class="co-md-6 col-lg-4">
-                            <div class="box">
-                                <div class="image">
-                                        <img src="img/blog/2.png" alt="">
-                                        <a href="#" class="cate">Web</a>
-                                </div>
-                                <div class="text">
-                                        <h3><a href="#">Best Design Items to Appeal</a></h3>
-                                        <h4>By Dorian Gray, Jun 27, 2018</h4>
-                                        <p>Lorem Ipsum has been standard. Lorem Ipsum is simply text of the printing and typesetting industry. Lorem Ipsum has been</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Post-3 -->
-                    <div class="co-md-6 col-lg-4">
-                            <div class="box">
-                                <div class="image">
-                                        <img src="img/blog/3.png" alt="">
-                                        <a href="#" class="cate">Web</a>
-                                </div>
-                                <div class="text">
-                                        <h3><a href="#">The 20 Best Lightroom Presets</a></h3>
-                                        <h4>By Dorian Gray, Jun 27, 2018</h4>
-                                        <p>Lorem Ipsum has been standard. Lorem Ipsum is simply text of the printing and typesetting industry. Lorem Ipsum has been</p>
-                                </div>
-                            </div>
-                        </div>
-
-                </div>
-            </div>
-        </section>
-        <!-- ===== End Blog ===== -->
+        
 
 
 
@@ -634,17 +613,17 @@ effectively to deliver high-quality, scalable solutions.
                     </div>
                     <div class="col-md-4">
                         <div class="info">
-                            <div class="d-flex mb-3">
+                            <div class="d-flex mb-4">
                                 <span class="fa-regular fa-location-dot mr-3"></span>
                                 <p class="m-0">Ahmedabad</p>
                             </div>
-                            <div class="d-flex mb-3">
+                            <div class="d-flex mb-4">
                                 <span class="fa fa-phone mr-3"></span>
                                 <a href="tel:9106035651" class="">
                                     <p class="m-0">9106035651</p>
                                 </a>
                             </div>
-                               <div class="d-flex mb-3">
+                               <div class="d-flex mb-4">
                                    <span class="fa-light fa-envelope mr-3"></span>
                                    <a href="mailto:krishnarathore8888@gmail.com" >
                                        <p class="m-0">krishnarathore8888@gmail.com</p>
