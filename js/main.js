@@ -64,7 +64,7 @@ $('.tech_logo').owlCarousel({
   margin:10,
   nav:true,
   autoplay:true,
-  center:true, //focused slide will stay center
+  center:false, //focused slide will stay center
 
   //autoWidth:true, //for alternate image widths
   //lazyLoad:true,  //only load images when needed
@@ -85,4 +85,10 @@ $('.tech_logo').owlCarousel({
 function experience(element) {
     $(element).closest(".ex-description").toggleClass('d-none');
 }
+$(window).ready(function(){
+    $(".experience-box").css({
+        'position':'sticky',
+        'top':'20%'
+    });
+});
 
